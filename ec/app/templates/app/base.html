@@ -31,7 +31,7 @@
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="{% url "category" "ML" %}">Milk</a></li>
                   <li><a class="dropdown-item" href="{% url "category" "CR" %}">Curd</a></li>
-                  <li><a class="dropdown-item" href="{% url "category" "MS" %}">Milkshake<a><li>
+                  <li><a class="dropdown-item" href="{% url "category" "MS" %}">Milkshake</a><li>
                   <li><a class="dropdown-item" href="{% url "category" "LS" %}">Lassi</a></li>
                   <li><a class="dropdown-item" href="{% url "category" "GH" %}">Ghee</a></li>
                   <li><a class="dropdown-item" href="{% url "category" "PN" %}">Paneer</a></li>
@@ -63,10 +63,10 @@
                     Nilesh
                   </a>
                   <ul class="dropdown-menu"  aria-labelledby="profileDropdown">
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
                     <li><a class="dropdown-item" href="#">Orders</a></li>
-                    <li><a class="dropdown-item" href="#">Change Password</a></li>
-                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                    <li><a class="dropdown-item" href="{% url 'passwordchange' %}">Change Password</a></li>
+                    <li><a class="dropdown-item" href="{% url 'Login' %}">Logout</a></li>
                   </ul>
             </li>
             <li class="nav-item mx-2">
@@ -76,7 +76,7 @@
                 <a href="#" class="nav-link text-white">Wishlist</a>
             </li>
             <li class="nav-item mx-2">
-                <a href="#" class="nav-link text-white">Login</a>
+                <a href="{% url 'Login' %}" class="nav-link text-white">Login</a>
             </li>
             <li class="nav-item mx-2">
                 <a href="{% url 'customerregistration' %}" class="nav-link text-white">Registration</a>
